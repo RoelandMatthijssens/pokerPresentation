@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>PRESENTATION TITLE</title>
+<meta content='DESCRIPTION' name='description'>
+<meta content='AUTHOR NAME' name='author'>
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+<link href='reveal.js/css/reveal.min.css' rel='stylesheet'>
+<link href='reveal.js/css/theme/default.css' id='theme' rel='stylesheet'>
+<!-- For syntax highlighting -->
+<link href='reveal.js/lib/css/zenburn.css' rel='stylesheet'>
+<!-- For nice fonts, load more here -->
+<!-- Go to http://www.google.com/webfonts -->
+<!-- * Add to collection -->
+<!-- * Use -->
+<!-- * pick which styles -->
+<!-- * find the link to add here -->
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+<!-- Nice fonts combos: -->
+<!-- http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/ -->
+<!-- Override the reveal.js fonts here, after loading them above -->
+<style>
+  .reveal h1 {
+    font-family: 'Merriweather', serif;
+    text-transform: none;
+    line-height: 1.0em;
+  }
+  .reveal h2 {
+    font-family: 'Merriweather', serif;
+    text-transform: none;
+  }
+  .reveal h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: none;
+  }
+  .reveal p {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: none;
+  }
+  
+  /* Misc layout */
+  table.centric {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table.centric td {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  /* Styles for the specific data-state for the last slide %/
+  html.the-end .state-background {
+    background-color: rgba(0,0,0, 0.8);
+  }
+  
+  
+  .strike {
+    text-decoration: line-through;
+  }
+</style>
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+  document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        /[if lt IE 9]
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+</script>
+</head>
+<body>
+<div class='reveal'>
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class='slides'>
+<section>
+<h1>Poker Basics</h1>
+<p>Roeland Matthijssens</p>
+</section>
+<section>
+<h1>Position</h1>
+<img src='images/position.png'>
+</section>
+<section>
+<p>Money travels clockwise in the direction of the  button</p>
+</section>
+<section>
+<p>Minimize losses</p>
+<p>Maximize winnings</p>
+</section>
+<section>
+<p>More information</p>
+<p>Cheaper to play drawy hands</p>
+<p>Easier to get away from drawy hands</p>
+</section>
+<section>
+<p>Bluffing is harder OOP</p>
+</section>
+<section>
+<h1>Hand Ranges</h1>
+</section>
+<section>
+<img src='images/handRange.png'>
+</section>
+<section>
+<h3>10%</h3>
+<img src='images/handRange10.png'>
+</section>
+<section>
+<h3>15%</h3>
+<img src='images/handRange15.png'>
+</section>
+<section>
+<h3>30%</h3>
+<img src='images/handRange30.png'>
+</section>
+<section>
+<h3>45%</h3>
+<img src='images/handRange45.png'>
+</section>
+<section>
+<p>These ranges are only applicable when deciding to open the hand</p>
+</section>
+<section>
+<h3>Easy odds estimation</h3>
+<p>outs x2 per card (*)</p>
+</section>
+<section>
+<h1>Exercise:</h1>
+<p>Flush draw</p>
+<img src='images/flushDraw.png'>
+</section>
+<section>
+<h1>Exercise:</h1>
+<p>Flush draw</p>
+<img src='images/flushDrawCalculated.png'>
+<p>cards that can help: AKQJ87543 of clubs (9 cards)</p>
+<p>Odds of hitting on turn (9x2 = 18%)</p>
+<p>Odds of hitting on turn OR river (9x2x2 = 36%)</p>
+</section>
+<section>
+<h1>Exercise:</h1>
+<p>Straight draw (open ended)</p>
+<img src='images/straightDraw.png'>
+</section>
+<section>
+<h1>Exercise:</h1>
+<p>Straight draw (open ended)</p>
+<img src='images/straightDrawCalculated.png'>
+</section>
+<section>
+<h1>Exercise:</h1>
+<p>Straight draw (gutshot)</p>
+<img src='images/gutshotDraw.png'>
+</section>
+<section>
+<h1>Exercise:</h1>
+<p>Straight draw (gutshot)</p>
+<img src='images/gutshotDrawCalculated.png'>
+</section>
+<section>
+<h1>Exercise:</h1>
+<p>Overcards</p>
+<img src='images/overcards.png'>
+</section>
+<section>
+<h1>Exercise:</h1>
+<p>Overcards</p>
+<img src='images/overcardsCalculated.png'>
+</section>
+<section>
+<h1>Pot Odds</h1>
+<br>
+<p>Vilain bets just half pot this gives you 25% pot odds</p>
+<p>Vilain bets full pot this gives you 33% pot odds</p>
+<br>
+<p>Based on your equity (outs) and the pot odds decide if calling is profitable</p>
+</section>
+<section>
+<h1>Bet sizing is important!!</h1>
+<br>
+<p>Don't allow drawing hands to see free/cheap cards</p>
+</section>
+<section>
+<h2>Good practices in game</h2>
+<br>
+<p>Don't limp</p>
+<p>Play loose in position</p>
+<p>Play tight out of position</p>
+<p>Try to get headsup post flop</p>
+<p>Make your bet count</p>
+<p>Minimize (semi)bluffing range</p>
+<p>Set mine small pocket pairs</p>
+</section>
+<section>
+<h2>How To Set Mine</h2>
+<br>
+<p>Don't call large(5bb+) preflop bets with small PP (TT-)</p>
+<p>Only call deep stacked players (12-1)</p>
+<p>Fold small pocket pairs postflop to any aggression</p>
+<p>Overpairs are playable but be carefull</p>
+<p>Be ready to ship it when you hit the set</p>
+</section>
+<section>
+<h1>Types of bets</h1>
+<p>3bet/4bet/...</p>
+<p>Continuation bet</p>
+<p>squeeze</p>
+<p>Donk bet</p>
+<p>Valuebet</p>
+<p>Blocking bet</p>
+<p>Bluff/semibluff</p>
+<p>Info bet</p>
+</section>
+<section>
+<h1>Tools</h1>
+<br>
+<h3>Hand analyser</h3>
+<p>http://www.cardplayer.com/poker-tools/odds-calculator/texas-holdem</p>
+<br>
+<h3>Hand range calculator</h3>
+<p>http://www.pokerhandrange.com/</p>
+</section>
+<section>
+<h1>Future topics</h1>
+<p>Player types</p>
+<p>Playing against player types</p>
+<p>Levels of thinking</p>
+<p>Fold equity</p>
+<p>Implied odds</p>
+<p>Reverse implied odds</p>
+<p>Hand reading</p>
+<p>HUDs/vpip/pfr/af/...</p>
+<p>Online table picking</p>
+<p>...</p>
+</section>
+<section>
+<h3>If you can't spot the fish, it's you</h3>
+</section>
+</div>
+</div>
+<script src='reveal.js/lib/js/head.min.js'></script>
+<script src='reveal.js/js/reveal.min.js'></script>
+<script>
+  // Full list of configuration options available here: JPL
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: false,
+    progress: false,
+    history: true,
+    center: true,
+  
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+  
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+        { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        // { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+    ]
+  });
+</script>
+</body>
+</html>

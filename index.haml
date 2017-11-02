@@ -1,0 +1,255 @@
+<!doctype html>
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title PRESENTATION TITLE
+    %meta{:content => "DESCRIPTION", :name => "description"}/
+    %meta{:content => "AUTHOR NAME", :name => "author"}/
+    %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
+    %meta{:content => "black-translucent", :name => "apple-mobile-web-app-status-bar-style"}/
+    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", :name => "viewport"}/
+    %link{:href => "reveal.js/css/reveal.min.css", :rel => "stylesheet"}/
+    %link#theme{:href => "reveal.js/css/theme/default.css", :rel => "stylesheet"}/
+    / For syntax highlighting
+    %link{:href => "reveal.js/lib/css/zenburn.css", :rel => "stylesheet"}/
+
+    / For nice fonts, load more here
+    / Go to http://www.google.com/webfonts
+    / * Add to collection
+    / * Use
+    / * pick which styles
+    / * find the link to add here
+    %link{ :href=> 'http://fonts.googleapis.com/css?family=Merriweather:400,700', :rel => 'stylesheet', :type => 'text/css'}
+    %link{ :href=> 'http://fonts.googleapis.com/css?family=Open+Sans:600', :rel => 'stylesheet', :type => 'text/css'}
+    / Nice fonts combos:
+    / http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/
+
+    / Override the reveal.js fonts here, after loading them above
+    :css
+      .reveal h1 {
+        font-family: 'Merriweather', serif;
+        text-transform: none;
+        line-height: 1.0em;
+      }
+      .reveal h2 {
+        font-family: 'Merriweather', serif;
+        text-transform: none;
+      }
+      .reveal h3 {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: none;
+      }
+      .reveal p {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: none;
+      }
+
+      /* Misc layout */
+      table.centric {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      table.centric td {
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      /* Styles for the specific data-state for the last slide %/
+      html.the-end .state-background {
+        background-color: rgba(0,0,0, 0.8);
+      }
+
+
+      .strike {
+        text-decoration: line-through;
+      }
+
+    / If the query includes 'print-pdf', use the PDF print sheet
+    :javascript
+      document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+            /[if lt IE 9]
+      <script src="reveal.js/lib/js/html5shiv.js"></script>
+  %body
+    .reveal
+      / Any section element inside of this container is displayed as a slide
+      .slides
+
+        %section
+          %h1 Poker Basics
+          %p Roeland Matthijssens
+
+        %section
+          %h1 Position
+          %img(src='images/position.png')
+        %section
+          %p Money travels clockwise in the direction of the  button
+        %section
+          %p Minimize losses
+          %p Maximize winnings
+        %section
+          %p More information
+          %p Cheaper to play drawy hands
+          %p Easier to get away from drawy hands
+        %section
+          %p Bluffing is harder OOP
+
+        %section
+          %h1 Hand Ranges
+        %section
+          %img(src='images/handRange.png')
+        %section
+          %h3 10%
+          %img(src='images/handRange10.png')
+        %section
+          %h3 15%
+          %img(src='images/handRange15.png')
+        %section
+          %h3 30%
+          %img(src='images/handRange30.png')
+        %section
+          %h3 45%
+          %img(src='images/handRange45.png')
+        %section
+          %p These ranges are only applicable when deciding to open the hand
+
+        %section
+          %h3 Easy odds estimation
+          %p outs x2 per card (*)
+
+        %section
+          %h1 Exercise:
+          %p Flush draw
+          %img(src='images/flushDraw.png')
+        %section
+          %h1 Exercise:
+          %p Flush draw
+          %img(src='images/flushDrawCalculated.png')
+          %p cards that can help: AKQJ87543 of clubs (9 cards)
+          %p Odds of hitting on turn (9x2 = 18%)
+          %p Odds of hitting on turn OR river (9x2x2 = 36%)
+
+        %section
+          %h1 Exercise:
+          %p Straight draw (open ended)
+          %img(src='images/straightDraw.png')
+
+        %section
+          %h1 Exercise:
+          %p Straight draw (open ended)
+          %img(src='images/straightDrawCalculated.png')
+
+        %section
+          %h1 Exercise:
+          %p Straight draw (gutshot)
+          %img(src='images/gutshotDraw.png')
+
+        %section
+          %h1 Exercise:
+          %p Straight draw (gutshot)
+          %img(src='images/gutshotDrawCalculated.png')
+
+        %section
+          %h1 Exercise:
+          %p Overcards
+          %img(src='images/overcards.png')
+
+        %section
+          %h1 Exercise:
+          %p Overcards
+          %img(src='images/overcardsCalculated.png')
+
+        %section
+          %h1 Pot Odds
+          %br
+          %p Vilain bets just half pot this gives you 25% pot odds
+          %p Vilain bets full pot this gives you 33% pot odds
+          %br
+          %p Based on your equity (outs) and the pot odds decide if calling is profitable
+
+        %section
+          %h1 Bet sizing is important!!
+          %br
+          %p Don't allow drawing hands to see free/cheap cards
+
+        %section
+          %h2 Good practices in game
+          %br
+          %p Don't limp
+          %p Play loose in position
+          %p Play tight out of position
+          %p Try to get headsup post flop
+          %p Make your bet count
+          %p Minimize (semi)bluffing range
+          %p Set mine small pocket pairs
+
+        %section
+          %h2 How To Set Mine
+          %br
+          %p Don't call large(5bb+) preflop bets with small PP (TT-)
+          %p Only call deep stacked players (12-1)
+          %p Fold small pocket pairs postflop to any aggression
+          %p Overpairs are playable but be carefull
+          %p Be ready to ship it when you hit the set
+
+        %section
+          %h1 Types of bets
+          %p 3bet/4bet/...
+          %p Continuation bet
+          %p squeeze
+          %p Donk bet
+          %p Valuebet
+          %p Blocking bet
+          %p Bluff/semibluff
+          %p Info bet
+
+        %section
+          %h1 Tools
+          %br
+          %h3 Hand analyser
+          %p http://www.cardplayer.com/poker-tools/odds-calculator/texas-holdem
+          %br
+          %h3 Hand range calculator
+          %p http://www.pokerhandrange.com/
+
+        %section
+          %h1 Future topics
+          %p Player types
+          %p Playing against player types
+          %p Levels of thinking
+          %p Fold equity
+          %p Implied odds
+          %p Reverse implied odds
+          %p Hand reading
+          %p HUDs/vpip/pfr/af/...
+          %p Online table picking
+          %p ...
+
+        %section
+          %h3 If you can't spot the fish, it's you
+
+
+    %script{:src => "reveal.js/lib/js/head.min.js"}
+    %script{:src => "reveal.js/js/reveal.min.js"}
+    :javascript
+      // Full list of configuration options available here: JPL
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        progress: false,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
